@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioTech: Cultivo in vitro de Plantas</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-anim">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-logo">
+            <i class="fa-solid fa-leaf text-accent"></i> <span>BioTech<span class="text-accent">Edu</span></span>
+        </div>
+        <div class="nav-progress" id="nav-progress">
+            <div class="step active" data-step="welcome"><i class="fa-solid fa-house"></i></div>
+            <div class="step-connector"></div>
+            <div class="step" data-step="learn"><i class="fa-solid fa-book-open"></i></div>
+            <div class="step-connector"></div>
+            <div class="step" data-step="practice"><i class="fa-solid fa-flask"></i></div>
+            <div class="step-connector"></div>
+            <div class="step" data-step="evaluate"><i class="fa-solid fa-microscope"></i></div>
+        </div>
+    </nav>
+
+    <main id="app-container" class="container">
+        <!-- Views will be dynamically injected here by app.js -->
+    </main>
+
+    <!-- Modal for Feedback -->
+    <div id="feedback-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-panel">
+            <div id="modal-icon" class="modal-icon"></div>
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+            <button id="modal-btn" class="btn btn-primary mt-4">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
